@@ -22,10 +22,10 @@ jobs:
       # https://github.com/dart-lang/setup-dart/blob/main/README.md
       # - uses: dart-lang/setup-dart@v1
       - uses: dart-lang/setup-dart@v1.3
-      - name: Flutter Runner
-      # You may pin to the exact commit or the version.
-      # uses: jddeep/Flutter-Runner@56254d611d8b799e297ab6f81ab4ec5dd0d128a2
-        uses: jddeep/Flutter-Runner@1.2.0
+      - uses: subosito/flutter-action@v1
+        with:
+          flutter-version: "3.1.0-0.0.pre.1399"
+          channel: "stable"
       - name: Install dependencies
         run: flutter pub get
 
