@@ -40,4 +40,4 @@ jobs:
       - name: Run tests
         run: flutter test
       - name: build apk
-        run: flutter run build apk
+        run: flutter build apk
